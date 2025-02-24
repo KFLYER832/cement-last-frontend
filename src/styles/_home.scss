@@ -1,0 +1,136 @@
+.section-banner {
+    position: relative;
+    padding: 7rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+
+    .banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.5) 20%,
+                rgb(47, 43, 43, 0.5) 40%,
+                rgba(0, 0, 0, 0) 100%);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .content {
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            max-width: 1140px;
+            width: 100%;
+
+            .heading-section {
+                h2 {
+                    font-size: 2.5rem;
+
+                    @media (max-width: 768px) {
+                        font-size: 2rem;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 1.6rem;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+
+            .subheading-section {
+                h2 {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+
+                    @media (max-width: 768px) {
+                        font-size: 1.6rem;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+
+            .description-section {
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 2rem;
+                    font-weight: 500;
+                    line-height: 1.5;
+
+                    @media (max-width: 768px) {
+                        font-size: 0.9rem;
+                    }
+
+                    @media (max-width: 480px) {
+                        font-size: 0.8rem;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }
+
+            .button-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.8rem 1.5rem;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    background-color: #007DFF;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: #1071d8;
+                    }
+
+                    svg {
+                        font-size: 1.4rem;
+
+                        @media (max-width: 480px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        padding: 0.7rem 1.2rem;
+                        font-size: 1rem;
+                    }
+
+                    @media (max-width: 480px) {
+                        padding: 0.6rem 1rem;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
+}
