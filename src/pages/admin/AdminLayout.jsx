@@ -1,5 +1,5 @@
 import { Close as CloseIcon, ContactPhone, Dashboard, ExitToApp as ExitToAppIcon, FiveK, FourK, Image, ImageAspectRatio, ImportExport, Menu as MenuIcon, Message, OneK, SixK, ThreeK, TwoK } from "@mui/icons-material";
-import { Box, Drawer, Grid, IconButton, Stack, styled, Typography } from "@mui/material";
+import { Box, Drawer, Grid,Logout, IconButton, Stack, styled, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Link as LinkComponent, useLocation, useNavigate } from "react-router-dom";
 import { matBlack } from "./constants/color";
@@ -81,6 +81,11 @@ const adminTabs = [
         name: "Export",
         path: "/admin/export-data",
         icon: <ImportExport />
+    },
+    {
+        name: "Export",
+        path: "/admin/logout",
+        icon: <Logout/>
     },
 ]
 
