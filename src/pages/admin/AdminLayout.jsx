@@ -81,12 +81,7 @@ const adminTabs = [
         name: "Export",
         path: "/admin/export-data",
         icon: <ImportExport />
-    },
-    {
-        name: "Export",
-        path: "/admin/logout",
-        icon: <Logout/>
-    },
+    }
 ]
 
 
