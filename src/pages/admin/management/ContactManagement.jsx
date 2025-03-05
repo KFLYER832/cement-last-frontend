@@ -25,7 +25,7 @@ const ContactManagement = () => {
   // Fetch Contacts
   const fetchContacts = async () => {
     try {
-      const response = await axios.get(`${server}/contact/admin/get-all-information`,
+      const response = await axios.get(`${server}/contact/public/get-all-information`,
         { withCredentials: true }
       );
       setContacts(response.data.contacts);

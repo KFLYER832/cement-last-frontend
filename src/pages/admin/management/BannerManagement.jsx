@@ -81,7 +81,7 @@ const BannerManagement = () => {
             setSelectedFile(null);
 
             // Reset file input
-            if (fileInputRef.current) fileInputRef.current.value = "";
+            // if (fileInputRef.current) fileInputRef.current.value = "";
 
             fetchBanners();
         } catch (error) {
@@ -123,7 +123,7 @@ const BannerManagement = () => {
             setSelectedFile(null);
 
             // Reset file input
-            if (fileInputRef.current) fileInputRef.current.value = "";
+            // if (fileInputRef.current) fileInputRef.current.value = "";
 
             fetchBanners();
         } catch (error) {
